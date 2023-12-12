@@ -1,0 +1,52 @@
+.custom-btn-primary {
+    background-color: #a4afda; 
+    border-color: #44495b;
+    
+}
+  
+.container {
+    max-width: 900px; 
+    margin: 0 auto; 
+    padding: 20px; 
+}
+
+.input-group {
+    margin-bottom: 15px; 
+}
+
+.input-label {
+    margin: 3px; 
+    display: block; 
+}
+
+
+.input-field {
+    width: 100%; 
+    padding: 5px; 
+    border: 1px solid #6b728e; 
+    border-radius: 3px; 
+}
+
+/* Botones del script */
+
+.btn-custom-CA{
+    background-color: #7c9d96;
+}
+
+.btn-custom-Presente{
+    background-color: #82927d;
+}
+
+.btn-custom-Ausente{
+    background-color: #f7d060;
+}
+
+.btn-custom-Actualizar{
+    background-color: #ccbe8f;
+}
+
+
+
+
+
+  

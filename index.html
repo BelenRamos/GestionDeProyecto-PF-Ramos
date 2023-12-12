@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Asistencia</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+  <div class="container mt-5">
+    <h1 class="mb-4">Gestión de Alumnos y Asistencias</h1>
+    
+    <div class="mb-4">
+      <button class="btn custom-btn-primary me-2" onclick="agregarAlumno()">Agregar Alumno</button>
+    </div>
+    
+    <h2 class="mb-1">Listado de Alumnos</h2>
+    <!-- Lista de Alumnos  con sus botones -->
+    <ul id="alumnosLista" class="list-group mb-4">
+    </ul>
+
+    <div id="output"></div>
+
+    <div class="mt-7">
+      <h2>Calculadora de Promedios de Asistencias</h2>
+      <div class="input-group">
+          <label for="diasHabiles" class="input-label">Días Hábiles:</label>
+          <input type="number" id="diasHabiles" class="input-field">
+      </div>
+      <div class="input-group">
+          <label for="cantAlF" class="input-label">Cantidad de Alumnos Femeninos:</label>
+          <input type="number" id="cantAlF" class="input-field">
+      </div>
+      <div class="input-group">
+          <label for="inasF" class="input-label">Inasistencias Femeninas:</label>
+          <input type="number" id="inasF" class="input-field">
+      </div>
+      <div class="input-group">
+          <label for="cantAlM" class="input-label">Cantidad de Alumnos Masculinos:</label>
+          <input type="number" id="cantAlM" class="input-field">
+      </div>
+      <div class="input-group">
+          <label for="inasM" class="input-label">Inasistencias Masculinas:</label>
+          <input type="number" id="inasM" class="input-field">
+      </div>
+      <button class="btn custom-btn-primary mt-3" onclick="calcularPromediosAsistencias()">Calcular</button>
+      <div id="resultadoCalculadora"></div>
+  </div>
+  
+  </div>
+
+<!-- -----------------Scripts----------------------->
+    <script src="js/script.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+</html>
