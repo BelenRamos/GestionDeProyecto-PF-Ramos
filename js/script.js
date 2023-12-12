@@ -4,6 +4,20 @@ window.onload = function() {
   cargarAlumnosDesdeStorage();
 }
 
+document.addEventListener('DOMContentLoaded', function () {
+  const agregarAlumnoButton = document.querySelector('.custom-btn-primary.agregar-alumno');
+  if (agregarAlumnoButton) {
+      agregarAlumnoButton.addEventListener('click', agregarAlumno);
+  }
+
+  const calcularButton = document.querySelector('.custom-btn-primary.calcular');
+  if (calcularButton) {
+      calcularButton.addEventListener('click', calcularPromediosAsistencias);
+  }
+});
+
+
+
 /////////Funciones para calculculo de la asistencia
 
 function containsOnlyLetters(palabra) {
