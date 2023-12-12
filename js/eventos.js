@@ -1,3 +1,6 @@
+
+<link rel="stylesheet" href="css/estilos.css"></link>
+
 document.addEventListener('DOMContentLoaded', function () {
   const agregarAlumnoButton = document.querySelector('.custom-btn-agregar');
   agregarAlumnoButton.addEventListener('click', agregarAlumno);
