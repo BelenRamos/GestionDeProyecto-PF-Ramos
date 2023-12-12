@@ -1,5 +1,3 @@
-let alumnos = []; 
-
 window.onload = function() {
   cargarAlumnosDesdeStorage();
 }
@@ -7,15 +5,19 @@ window.onload = function() {
 document.addEventListener('DOMContentLoaded', function () {
   const agregarAlumnoButton = document.querySelector('.custom-btn-primary.agregar-alumno');
   if (agregarAlumnoButton) {
-      agregarAlumnoButton.addEventListener('click', agregarAlumno);
+      agregarAlumnoButton.addEventListener('click', agregarAlumno());
   }
 
   const calcularButton = document.querySelector('.custom-btn-primary.calcular');
   if (calcularButton) {
-      calcularButton.addEventListener('click', calcularPromediosAsistencias);
+      calcularButton.addEventListener('click', calcularPromediosAsistencias());
   }
 });
 
+
+
+
+let alumnos = []; 
 
 
 /////////Funciones para calculculo de la asistencia
