@@ -1,5 +1,5 @@
 // Obtener los datos de profesores desde el archivo JSON local
-fetch('personal.json')
+fetch('../personal.json')
   .then(response => {
     if (!response.ok) {
       throw new Error('Error al obtener los datos');
