@@ -18,7 +18,7 @@ fetch('../personal.json')
         <h3>ID: ${persona.id}</h3>
         <p>Nombre: ${persona.nombre}</p>
         <p>Cargo: ${persona.cargo}</p>
-        <p>Grado: ${persona.cargo}</p>
+        <p>Grado: ${persona.grado}</p>
       `;
       personalInfo.appendChild(info);
     });
