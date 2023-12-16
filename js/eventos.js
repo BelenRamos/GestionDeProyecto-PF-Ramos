@@ -1,6 +1,3 @@
-
-<link rel="stylesheet" href="css/estilos.css"></link>
-
 document.addEventListener('DOMContentLoaded', function () {
   const agregarAlumnoButton = document.querySelector('.custom-btn-agregar');
   agregarAlumnoButton.addEventListener('click', agregarAlumno);
@@ -8,6 +5,3 @@ document.addEventListener('DOMContentLoaded', function () {
   const calcularButton = document.querySelector('.custom-btn-calcular');
   calcularButton.addEventListener('click', calcularPromediosAsistencias);
 });
-
-  
-  

@@ -92,7 +92,7 @@ function validarDatos() {
   if (
     isNaN(diasHabiles) || isNaN(cantAlF) || isNaN(inasF) || isNaN(cantAlM) || isNaN(inasM) ||
     diasHabiles <= 0 || cantAlF < 0 || inasF < 0 || cantAlM < 0 || inasM < 0 ||
-    cantAlF + cantAlM <= 0 // Ejemplo de validación adicional: asegurar que haya al menos un alumno
+    cantAlF + cantAlM <= 0 
   ) {
     Swal.fire({
       icon: 'error',
@@ -366,9 +366,6 @@ function actualizarAlumno(nombre, apellido) {
     }
   });
 }
-
-
-
 
 function cargarAsistencia(nombre, apellido, presente) {
   let esPalabra = containsOnlyLetters(nombre) && containsOnlyLetters(apellido);
