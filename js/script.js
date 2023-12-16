@@ -189,11 +189,11 @@ function agregarAlumno() {
         return false;
       }
 
-      if (isNaN(parseInt(edad))) {
+      if (isNaN(parseInt(edad)) || parseInt(edad) < 6 || parseInt(edad) > 19 || parseInt(edad) < 0) {
         Swal.fire({
           icon: 'error',
           title: 'Error',
-          text: 'La edad debe ser un número.',
+          text: 'La edad debe ser un número entre 6 y 19 años.',
         });
         return false;
       }
@@ -319,8 +319,8 @@ function actualizarAlumno(nombre, apellido) {
                 confirmButtonText: 'Guardar',
                 cancelButtonText: 'Cancelar',
                 inputValidator: (value) => {
-                  if (!value || isNaN(value) || parseInt(value) <= 0) {
-                    return 'La edad debe ser un número mayor que cero.';
+                  if (!value || isNaN(value) || parseInt(value) < 6 || parseInt(value) > 19) {
+                    return 'La edad debe ser un número entre 6 y 19 años.';
                   }
                 }
               }).then((result) => {
