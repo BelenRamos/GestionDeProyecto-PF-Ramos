@@ -1,8 +1,15 @@
 .custom-btn-agregar, 
 .custom-btn-calcular {
-    background-color: #a4afda; 
-    border-color: #44495b;
+    background-color: #8fc9ca; 
     
+    
+}
+
+.custom-btn-personal{
+    position: absolute;
+    top: 20px; 
+    right: 20px;
+    background-color: #cce2cb;
 }
   
 .container {

@@ -1,0 +1,48 @@
+[
+  {
+    "id": 1,
+    "nombre": "Juan Pérez",
+    "cargo": "Profesor",
+    "grado": "Secundaria"
+  },
+  {
+    "id": 2,
+    "nombre": "María González",
+    "cargo": "Directivo"
+  },
+  {
+    "id": 3,
+    "nombre": "Carlos López",
+    "cargo": "Profesor",
+    "grado": "Universidad"
+  },
+  {
+    "id": 4,
+    "nombre": "Ana Martínez",
+    "cargo": "Directivo"
+  },
+  {
+    "id": 5,
+    "nombre": "Pedro Ramirez",
+    "cargo": "Mantenimiento"
+  },
+  {
+    "id": 6,
+    "nombre": "Luisa Fernández",
+    "cargo": "Mantenimiento"
+  },
+  {
+    "id": 7,
+    "nombre": "Laura García",
+    "cargo": "Maestra",
+    "grado": "Primaria"
+  },
+  {
+    "id": 8,
+    "nombre": "Javier Rodríguez",
+    "cargo": "Maestra",
+    "grado": "Preescolar"
+  }
+]
+
+  
