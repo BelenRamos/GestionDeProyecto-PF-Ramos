@@ -14,11 +14,15 @@ fetch('../personal.json')
     data.forEach(persona => {
       const info = document.createElement('div');
       info.classList.add('col-md-6'); 
+
+      // Verificar si el campo grado existe antes de mostrarlo
+      const grado = persona.grado ? persona.grado : ''; // Si no existe, asigna una cadena vacía
+
       info.innerHTML = `
         <h3>ID: ${persona.id}</h3>
         <p>Nombre: ${persona.nombre}</p>
         <p>Cargo: ${persona.cargo}</p>
-        <p>Grado: ${persona.grado}</p>
+        <p>Grado: ${grado}</p>
       `;
       personalInfo.appendChild(info);
     });
@@ -26,4 +30,5 @@ fetch('../personal.json')
   .catch(error => {
     console.error('Error:', error);
   });
+
 
