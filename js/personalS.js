@@ -16,7 +16,7 @@ fetch('../personal.json')
       info.classList.add('col-md-6'); 
 
       // Verificar si el campo grado existe antes de mostrarlo
-      const grado = persona.grado ? persona.grado : ''; // Si no existe, asigna una cadena vacía
+      const grado = persona.grado ? persona.grado : '---'; 
 
       info.innerHTML = `
         <h3>ID: ${persona.id}</h3>
